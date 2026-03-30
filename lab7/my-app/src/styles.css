@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  background: #222629;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #474b4f;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  color: #6b6e70;
+}
+
+h1 {
+  color: #86c232;
+}
+
+h1 img {
+  transform: translateY(2px);
+}
+
+.input-group {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.filter {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  background: #61892f;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  max-height: 40px;
+}
+
+button:hover {
+  background: #86c232;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  background: #222629;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.task:hover {
+  transform: translateY(-2px);
+}
+
+.task input {
+  margin-right: 5px;
+}
+
+.task button {
+  background: #474b4f;
+  border: 1px solid #6b6e70;
+  padding: 10px;
+  color: #86c232;
+  text-align: center;
+}
+
+.task button:hover {
+  background: #474b4f;
+  border-color: #86c232;
+  transition: all 0.2s ease;
+}
+
+.task .done-btn:hover {
+  color: #ffffff;
+  background: #86c232;
+}
+
+.task .edit-btn:hover {
+  color: #222629;
+  background: #f2c94c;
+}
+
+.task .delete-btn:hover {
+  color: #ffffff;
+  background: #e24e42;
+}
+
+.task .save-btn:hover {
+  color: #ffffff;
+  background: #61892f;
+}
+
+.actions {
+  display: flex;
+  gap: 5px;
+}
+
+textarea {
+  flex: 1;
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  resize: none;
+  font-family: inherit;
+}
+
+.task-text {
+  padding: 10px;
+  color: #ffffff;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.task-text.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
